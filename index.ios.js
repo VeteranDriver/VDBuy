@@ -9,40 +9,18 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  Image
 } from 'react-native';
-import TabNavigator from 'react-native-tab-navigator';
+
+var Main = require('./Component/Main/VDMain');
 
 class VDBuy extends Component {
   render() {
-    return (
-      <TabNavigator>
-        {/*----首页-----*/}
-        {/*----商家-----*/}
-        {/*----我的-----*/}
-        {/*----更多-----*/}
-        </TabNavigator>
-    );
+    return <Main />;
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
+
 
 AppRegistry.registerComponent('VDBuy', () => VDBuy);
